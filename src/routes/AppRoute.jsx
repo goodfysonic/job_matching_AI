@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import JobList from '@/pages/job/JobList';
-import Auth from '@/pages/auth/Auth';
+import SignIn from '@/pages/signin';
 import ProtectedRoute from './ProtectedRoute';
 import Layout from '@/components/layouts/Layout';
 
 const AppRoutes = () => {
  return (
    <Routes>
-     <Route path="/login" element={<Auth />} />
+     <Route path="/login" element={<SignIn />} />
      
      <Route element={<Layout />}>
        <Route 
